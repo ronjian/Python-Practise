@@ -20,7 +20,7 @@ class Solution(object):
                  {'digit': 3, '.': 5, 'e': 6, 'blank': 9},
                  {'digit': 5},
                  {'digit': 5, 'e': 6, 'blank': 9},
-                 {'sign': 7, 'digit': 8},
+                 {'sign':  7, 'digit': 8},
                  {'digit': 8},
                  {'digit': 8, 'blank': 9},
                  {'blank': 9}]
