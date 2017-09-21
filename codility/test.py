@@ -18,4 +18,6 @@ def solution(A, B):
 
 print(solution(A, B))
 
+
+
 #https://stackoverflow.com/questions/25750240/how-to-find-pairs-with-product-greater-than-sum
