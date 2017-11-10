@@ -134,3 +134,6 @@ print(solution2(A, B, C))
 # y =11
 # nail_sort=[(5, 2), (1, 4), (2, 6), (3, 7), (4, 10)]
 # print(find_first_nail(x, y , nail_sort))
+
+#There is another linear solution as below:
+#https://codesays.com/2014/solution-to-nailing-planks-by-codility/
