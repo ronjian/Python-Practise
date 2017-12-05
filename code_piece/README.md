@@ -1,0 +1,1 @@
+This folder is hands-on [this](http://book.pythontips.com/en/latest/index.html#).
