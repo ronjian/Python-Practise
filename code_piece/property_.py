@@ -1,41 +1,25 @@
-class myClass:
+class Student:
     def __init__(self):
-        self._vara = 0
-    
-    @property
-    def vara(self):
-        return self._vara
-
-    @vara.setter
-    def vara(self, value):
-        if not isinstance(value, int):
-            raise ValueError("value must be integer")
-        if value < 0 or value > 200:
-            raise ValueError("value must be between 0 and 200")
-        self._vara = value
-
-class myClass_explain:
-    def __init__(self):
-        self._vara = 0
-    
-    def getter(self):
-        return self._vara
-
-    def setter(self, value):
-        if not isinstance(value, int):
-            raise ValueError("value must be integer")
-        if value < 0 or value > 200:
-            raise ValueError("value must be between 0 and 200")
-        self._vara = value
-    
-    vara = property(getter, setter)
+        self._birthday = 2000
         
-myInstance = myClass()
-print(myInstance.vara)
-myInstance.vara = 100
-print(myInstance.vara)
+    @property
+    def birthday(self):
+        return self._birthday
+    
+    @birthday.setter
+    def birthday(self, value):
+        assert value > 1980, "birthday must be larger than 1980"
+        self._birthday = value
+        
+    @property
+    def age(self):
+        return 2018 - self._birthday
+    
+    
+Jack = Student()
+print(Jack.birthday, Jack.age)
+Jack.birthday = 2001
+print(Jack.birthday, Jack.age)
+Jack.birthday = 1900 # AssertionError: birthday must be larger than 1980
+Jack.age = 10 # AttributeError: can't set attribute
 
-myInstance2 = myClass_explain()
-print(myInstance2.vara)
-myInstance2.vara = 100
-print(myInstance2.vara)
